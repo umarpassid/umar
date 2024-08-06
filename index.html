@@ -3,154 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home Page</title>
+    <title>Crazy Quotes</title>
     <style>
         body {
-            font-family: CINZEL;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            overflow-x: hidden;
         }
-        header {
-            background-color: pink;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-      h2 {
-               text-align: center;
 
-             }
-p{
+        header {
+            background-color: #ff5733;
+            color: white;
             text-align: center;
-}
+            padding: 1em;
+        }
+
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 1em;
             text-align: center;
         }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
         nav a:hover {
-            background-color: #555;
+            text-decoration: underline;
+            color: #ff5733;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+
+        main {
+            padding: 2em;
         }
+
+        section {
+            display: none;
+            margin-bottom: 2em;
+        }
+
         footer {
             background-color: #333;
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 1em;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
         }
-        h1 {
-            color: #333;
+
+        .quote {
+            background-color: #fff;
+            border-left: 5px solid #ff5733;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
         }
-        p {
-            line-height: 1.6;
-        }
-main .container {
-    padding: 1rem;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.product {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    width: calc(33.333% - 2rem);
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1rem;
-}
-
-.product button {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.product button:hover {
-    background: #555;
-}
     </style>
 </head>
 <body>
     <header>
-        <h1> Easy shopping</h1>
+        <h1>Crazy Quotes</h1>
     </header>
     <nav>
-        <a href="file:///D:/overwolf/home.html#home">Home</a>
-        <a href="file:///D:/overwolf/about.html">About</a>
-        <a href="file:///D:/overwolf/shopingweb.html#">Services</a>
-        <a href="file:///D:/overwolf/home.html#contact#contact">Contact</a>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('love')">Love Quotes</a>
+        <a href="#" onclick="showSection('revenge')">Revenge Quotes</a>
+        <a href="#" onclick="showSection('motivational')">Motivational Quotes</a>
     </nav>
-    <div class="container">
+    <main>
+        <!-- Home Section -->
         <section id="home">
-            <h2>WELCOME IN EASY SHOPPING</h2>
-            <p>Welcome to ShopEase, your one-stop destination for all your shopping needs! Whether you're looking for the latest fashion trends, cutting-edge electronics, or unique home decor, we have something for everyone. Our carefully curated collections and user-friendly interface make shopping an enjoyable experience from start to finish.</p>
-    <p>Explore our diverse range of products, enjoy exclusive deals, and discover why ShopEase is the preferred choice for savvy shoppers. With fast shipping, secure payment options, and exceptional customer service, we’re here to ensure you have the best shopping experience possible.</p>
-    <p>Start browsing now and find out what makes ShopEase your ultimate shopping companion!</p>
+            <h2>Welcome to Crazy Quotes</h2>
+            <p>Explore a collection of quotes on various topics. Click on the links above to navigate to specific categories of quotes.</p>
         </section>
 
+        <!-- Love Quotes Section -->
+        <section id="love">
+            <h2>Love Quotes</h2>
+            <div class="quote">"If you ever have to choose between me and someone else, then please choose them. Because the moment when there's a choice, I am not an option!"</div>
+            <div class="quote">"Love is not about how much you say 'I love you', but how much you can prove that it's true."</div>
+            <div class="quote">"To be your friend was all I ever wanted; to be your lover was all I ever dreamed."</div>
+            <div class="quote">"Love does not dominate; it cultivates."</div>
+            <div class="quote">"You know you’re in love when you can’t fall asleep because reality is finally better than your dreams."</div>
+            <div class="quote">"Love is when the other person's happiness is more important than your own."</div>
+            <div class="quote">"The best thing to hold onto in life is each other."</div>
+            <div class="quote">"Love is a friendship set to music."</div>
+        </section>
 
-<main>
-        <div class="container">
-            <section class="products">
-                <article class="product">
-                    <img src="https://m.media-amazon.com/images/I/71eUwDk8z+L._SX569_.jpg" alt="Product 1"style = "width:300px;height:400px;">
-                    <h3>Product 1</h3>
-                    <p1>$10.00</p1>
-<button onclick="document.location='file:///D:/overwolf/shopingweb.html#'">BUY NOW</button>
-                </article>
-                <article class="product">
-                    <img src="https://m.media-amazon.com/images/I/71Wcyd+f7LL._SY741_.jpg" alt="Product 2"style = "width:300px;height:400px;">
-                    <h2>Product 2</h2>
-                    <p>$15.00</p>
-                   <button onclick="document.location='file:///D:/overwolf/shopingweb.html#'">BUY NOW</button>
-                </article>
-                <article class = "product">
-                   <img src = "https://m.media-amazon.com/images/I/61TE4TF50hL._SY741_.jpg"  alt = "Product 3" "width:150px;height:250px;">
-                  <h2> product 3 </h2>
-                    <p> $73487 </p>
-                      <button onclick="document.location='file:///D:/overwolf/shopingweb.html#'">BUY NOW</button>
-                      </article>
-                <!-- Add more products here -->
-            </section>
-        </div>
+        <!-- Revenge Quotes Section -->
+        <section id="revenge">
+            <h2>Revenge Quotes</h2>
+            <div class="quote">"Hurt me with a truth but never comfort me with a lie."</div>
+            <div class="quote">"The best revenge is to live on and prove yourself."</div>
+            <div class="quote">"Revenge is a dish best served cold."</div>
+            <div class="quote">"Those who seek revenge should dig two graves: one for their enemy and one for themselves."</div>
+            <div class="quote">"An eye for an eye will only make the whole world blind."</div>
+            <div class="quote">"The only way to deal with this type of revenge is to show no reaction at all."</div>
+            <div class="quote">"Revenge is not the way to achieve peace and satisfaction."</div>
+            <div class="quote">"The greatest revenge is to accomplish what others say you cannot do."</div>
+        </section>
+
+        <!-- Motivational Quotes Section -->
+        <section id="motivational">
+            <h2>Motivational Quotes</h2>
+            <div class="quote">"Success is not final, failure is not fatal: It is the courage to continue that counts."</div>
+            <div class="quote">"Don't watch the clock; do what it does. Keep going."</div>
+            <div class="quote">"The only limit to our realization of tomorrow is our doubts of today."</div>
+            <div class="quote">"Believe you can and you're halfway there."</div>
+            <div class="quote">"The future belongs to those who believe in the beauty of their dreams."</div>
+            <div class="quote">"Do not wait to strike till the iron is hot, but make it hot by striking."</div>
+            <div class="quote">"Success usually comes to those who are too busy to be looking for it."</div>
+            <div class="quote">"Motivation is what gets you started. Habit is what keeps you going."</div>
+            <div class="quote">"The way to get started is to quit talking and begin doing."</div>
+            <div class="quote">"Hardships often prepare ordinary people for an extraordinary destiny."</div>
+            <div class="quote">"Your time is limited, don't waste it living someone else's life."</div>
+            <div class="quote">"Act as if what you do makes a difference. It does."</div>
+            <div class="quote">"You miss 100% of the shots you don’t take."</div>
+        </section>
     </main>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p> 97185 38450</p>
-<p> E-mail = 252571.chauhan@doe.delhi.gov.in </p>
-        </section>
-    </div>
     <footer>
-        &copy; 2024 My Website. All rights reserved.
+        <p>&copy; 2024 Crazy Quotes</p>
     </footer>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('main > section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the home section by default
+        showSection('home');
+    </script>
 </body>
 </html>
